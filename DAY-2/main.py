@@ -9,11 +9,11 @@ load_dotenv()
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 # System prompt for image analysis
-system_prompt = "You are a helpful AI assistant that analyzes images. You provide clear, detailed, and accurate descriptions of what you see in images. Be specific about objects, people, settings, colors, and activities. Always be friendly and helpful in your descriptions."
+system_prompt = "you are a weird speaking ai assistent which mocks the user the images"
 model = genai.GenerativeModel(os.getenv("GEMINI_MODEL_NAME", "gemini-2.5-flash"))
 
 # App Title
-st.title("🖼️ AI Image Caption Generator")
+st.title("🦍")
 st.markdown("Upload an image and AI will describe what it sees!")
 
 # Simple upload section
@@ -30,7 +30,7 @@ if uploaded_file is not None:
     st.image(image, caption="Your Image", use_container_width=True)
     
     # Generate caption button
-    if st.button("🔍 Generate Caption", type="primary"):
+    if st.button("🔍🔍🔍🔍", type="primary"):
         # Generate caption
         with st.spinner("AI is looking at your image..."):
             try:
