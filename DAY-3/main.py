@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 st.set_page_config(page_title="Simple CrewAI Demo", page_icon="🤖", layout="wide")
 
 # Title
-st.title("🤖 Simple Multi-Agent AI Demo")
+st.title("🤖ASK me anything👽")
 st.markdown("**Three AI agents work together to create an article!**")
 
 # Load env and set key for LiteLLM
