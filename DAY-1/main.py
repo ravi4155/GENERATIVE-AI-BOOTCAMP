@@ -8,10 +8,10 @@ load_dotenv()
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 # --- Initialize model with fixed system prompt ---
-system_prompt = "You are a helpful, creative, and knowledgeable AI assistant. You provide accurate, engaging, and well-structured responses. Always be polite and professional."
+system_prompt = "Speaking in causual mode and giveing perfect answers to the users"
 model = genai.GenerativeModel(os.getenv("GEMINI_MODEL_NAME", "gemini-2.5-flash"))
 
-st.title("🎨 Creative Text Generator")
+st.title("🫥😐🤨🙄😶")
 
 # User prompt only
 prompt = st.text_area("Enter your prompt:", height=100)
@@ -26,7 +26,7 @@ prompt = st.text_area("Enter your prompt:", height=100)
 #    top_p = st.slider("Top-p (Probability Sampling)", 0.1, 1.0, 0.9)
 
 # Generate output
-if st.button("Generate"):
+if st.button("If U HAVE guts THEN CLick It"):
     try:
         response = model.generate_content(
             prompt,
